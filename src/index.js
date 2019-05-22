@@ -43,8 +43,6 @@ renderBeer()
 document.addEventListener('click', (e) => {
   if (e.target.className === 'list-group-item') {
 
-		// I tried to save the description and name as datasets but could only retrive the first word.  Was working on a solution.
-
     let beerId = (e.target.previousElementSibling.id)
     let beerName = e.target.innerText
     let beerImage = e.target.previousElementSibling.dataset.image_url
